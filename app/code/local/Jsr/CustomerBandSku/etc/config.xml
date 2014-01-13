@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Jsr_Customerbandsku>
+            <version>0.1.0</version>
+        </Jsr_Customerbandsku>
+    </modules>
+    <global>
+        
+        <resources>
+            <Jsr_Customerbandsku_setup>
+                <setup>
+                    <module>Jsr_Customerbandsku</module>
+                    <class>Mage_Customer_Model_Entity_Setup</class>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </Jsr_Customerbandsku_setup>
+            <Jsr_Customerbandsku_write>
+                <connection>
+                    <use>core_write</use>
+                </connection>
+            </Jsr_Customerbandsku_write>
+            <Jsr_Customerbandsku_read>
+                <connection>
+                    <use>core_read</use>
+                </connection>
+            </Jsr_Customerbandsku_read>
+        </resources>
+    </global>
+    
+</config>
